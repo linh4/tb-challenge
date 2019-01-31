@@ -1,0 +1,142 @@
+/* ---------- GENERAL STYLES ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a {
+  color: #000;
+  text-decoration:none;
+}
+
+/* ----------- MAIN PAGE --------- */
+
+.page {
+  display: block;
+  margin: 20px auto;
+  width: 70%;
+  background-color: rgba(215, 215, 215, 0.6);
+  padding: 0 10px;
+}
+
+/* --------- THUMBNAILS STYLES ---------  */
+
+/* HEADER */
+.header {
+  display: flex;
+}
+
+.header > p {
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right,
+.right a {
+  color: #6b6b6b;
+  font-size: 12px;
+}
+
+/*  IMAGES STYLES  */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: 100%;
+}
+
+.container div {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+}
+.img-container p {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f7f7f7;
+  margin: 0;
+  letter-spacing: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 18px;
+  font-size: 0.8em;
+}
+
+/* --------- TITLE & BRAND -------------  */
+/* TITLE HAS ELLIPSIS FOR TRUNCATING LONG TITLES */
+.ad-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+}
+
+.ad-title:hover,
+.right:hover {
+  text-decoration: underline;
+}
+
+.ad-brand {
+  font-size: 0.75em;
+  color: #969696;
+  margin-top: -10px;
+}
+
+/* 404 PAGE */
+
+.giphy {
+  margin: 30px auto 0 auto;
+  text-align: center;
+}
+
+/* -------- RESPONSIVE FOR MOBILE PHONE --------- */
+@media screen and (max-width: 600px) {
+    .page {
+      width: 80%;
+    }
+    .container {
+      grid-template-columns: auto;
+      grid-gap: 5px;
+    }
+
+    .left,
+    .right {
+      font-size: 0.7em;
+      margin-bottom: 10px;
+    }
+    .right {
+      margin-left: 80px;
+    }
+    .ad-title {
+      font-size: 0.9em;
+    }
+    .ad-brand {
+      font-size: 0.7em;
+    }
+}
