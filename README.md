@@ -11,6 +11,6 @@
  Checked if the category exists, render and show it on the images:
  - If the item has a category (as seen in the JSON response), display that category with that item in the widget. Where/how you display it is up to you!
  
- Used navigator language for deatecting languages:
+ Used navigator language for detecting languages:
  - If the user is viewing the widget from the United States, show the header text in English. If the user is viewing from outside the US, show the header text in another language (can be a catch-all, doesn’t need to be country specific).
 
